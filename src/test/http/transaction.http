@@ -1,0 +1,39 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+### use balance
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+
+{
+  "userId": "1",
+  "accountNumber": "1000000000",
+  "amount": 100
+}
+
+### use balance2
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+
+{
+  "userId": "1",
+  "accountNumber": "1000000000",
+  "amount": 100
+}
+
+### cancel balance
+POST http://localhost:8080/transaction/cancel
+Content-Type: application/json
+
+
+{
+  "transactionId": "26649c3579ee4863837c912e418f6120",
+  "accountNumber": "1000000000",
+  "amount": 10000
+}
+
+### query transaction
+GET http://localhost:8080/transaction/39eb88c3a5f74368b6fe7cbb33c8a74c
